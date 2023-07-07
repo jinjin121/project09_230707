@@ -1,0 +1,501 @@
+:root {
+    --lbl: #007aff;
+    --dbl: #151789;
+    --gc: #a8a8a8;
+    --wgc: #d5d7db;
+}
+
+
+
+.header {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    height: 80px;
+}
+
+.main_menu {
+    display: flex;
+    gap: 30px;
+}
+
+.main_menu li {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dbl);
+}
+
+.main_menu li a {
+    display: block;
+    height: 80px;
+}
+
+.sub_menu_box {
+    display: none;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub_menu {
+    display: flex;
+    gap: 30px;
+    height: 50px;
+    line-height: 50px;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_menu li:hover .sub_menu_box {
+    display: block;
+}
+
+.sub_menu>li {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.member_box {
+    display: flex;
+    gap: 10px;
+}
+
+.header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* header끝 */
+.mainSlide {
+    position: relative;
+}
+
+.mainSlide .Slide {
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.mainSlide .Slide01 {
+    background: url(../image/mainVisual01.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide02 {
+    background: url(../image/mainVisual02.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide03 {
+    background: url(../image/mainVisual03.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide04 {
+    background: url(../image/mainVisual04.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide05 {
+    background: url(../image/mainVisual05.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide06 {
+    background: url(../image/mainVisual06.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide07 {
+    background: url(../image/mainVisual07.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .Slide08 {
+    background: url(../image/mainVisual08.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.slogan h3 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.slogan p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.Slide .txtwhite {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mainSlide .arrows {
+    /*max-width: 1600rem;
+    width: 100%;
+    padding: 0 15rem; */
+    cursor: pointer;
+}
+
+.mainSlide .arrows .left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: 998;
+
+    /* 
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%); */
+}
+
+.mainSlide .arrows .right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    z-index: 998;
+
+    /* 
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    max-width: 1600rem;
+    width: 100%;
+    padding: 0 15rem; */
+}
+
+.swiper-pagination-fraction {
+    bottom: 50px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+
+/* mainSlide끝 */
+
+.mainCategory h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.mainCategory>.inner .cateTitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.mainCategory figure p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.swiper-scrollbar {}
+
+/* categoyry끝 */
+
+.cate_title {
+    text-align: center;
+    padding: 100px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.item_photo_box img {}
+
+.item_cont .item_info_cont {}
+
+.item_info_cont .item_name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.item_info_cont .item_txt {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--gc);
+    margin: 30px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item_info_cont .item_money_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price_box .item_sale {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.price_box .item_price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item_money_box .sale_percent {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--dbl);
+}
+
+.cateItm .cateItm_box {
+    height: 0;
+    overflow: hidden;
+}
+
+.cateItm .cateItm_box.on {
+    height: auto;
+}
+
+/*Category  */
+.mainPromotion .inner h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.pro_box {
+    background: #f4f6fa;
+    display: flex;
+    margin-top: 100px;
+}
+
+.pro_box .pro_right img {
+    display: block;
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.pro_left {
+    display: block;
+    max-width: 700px;
+    padding: 50px 30px 0 30px;
+}
+
+.pro_left .pro_title_box {
+    text-align: center;
+}
+
+.pro_left .pro_title_box p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pro_left .pro_title_box p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.pro_left .pro_title_box h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+}
+
+.pro_left .pro_title_box h4 {
+    font-size: 18px;
+}
+
+.pro_left .pro_title_box h4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--wgc);
+    margin: 30px 0;
+}
+
+.pro_list_box {
+    display: flex;
+    gap: 50px;
+}
+
+.pro_list_box .photo_box {
+    background: #fff;
+    padding: 20px 10px 15px 10px;
+}
+
+.photo_box .box_img {
+    display: block;
+    width: 275px;
+    overflow: hidden;
+}
+
+.photo_box .box_img img {
+    transition: 0.8s;
+}
+
+.pro_list_box .photo_box img:hover {
+    transform: scale(1.1);
+}
+
+.pro_list_box .photo_box strong {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pro_list_box .photo_box .item_explain {
+    display: block;
+    width: 275px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gc);
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item_money_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_box .item_sale_list {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.price_box .item_price_list {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item_money_box .sale_percent_list {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--dbl);
+}
+
+/* mainPromotion */
+
+.mainBanner {
+    padding-top: 150px;
+}
+
+.mainBanner .banner_box {
+    position: relative;
+}
+
+.mainBanner .banner_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mainBanner .banner_txt h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.mainBanner .banner_txt p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.mainBanner .banner_txt button {
+    width: 200px;
+    height: 50px;
+    border: solid 1px #fff;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* banner */
+
+.footer {
+    background: var(--dbl);
+}
+
+.footer_box {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer_middle .f_menu {
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.footer_middle p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer_right strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.footer_right p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.footer_right span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
